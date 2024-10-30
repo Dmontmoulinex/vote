@@ -22,5 +22,5 @@ jobs:
         ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "
           cd example-voting-app && \
           docker-compose pull && \
-          docker compose up -d
+          docker-compose up -d
           "
